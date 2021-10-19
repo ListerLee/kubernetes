@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webtest
+spec:
+  containers:
+  - image: webtest
+    name: webtest
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+  
